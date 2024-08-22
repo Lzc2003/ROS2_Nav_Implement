@@ -75,14 +75,14 @@ colcon build
 
 - 修改有线连接ip
 （修改ubuntu有线连接IPv4，修改如下图，地址与1.1中用户IP相同）
-![Alt text](https://gitee.com/lzczhichao/24-season-visual-code/raw/master/doc/3.png)
+![Alt text](https://github.com/Lzc2003/ROS2_Nav_Implement/blob/master/doc/3.png)
 
 
 **lakibeam1  2d雷达配置**
 
 - 当使用USB Type-C连接时，LakiBeam1(L/S)的IP地址默认为192.168.8.2，计算机的IP地址配置为192.168.8.1。PC的静态IP不需要设置，输入雷达的ip地址：192.168.8.2到浏览器。然后设置主机IP：192.168.8.1，并设置为DHCP模式。雷达将在几秒钟延迟后重置网络配置。在雷达的web服务器上通过USBType-C连接雷达进行的IP配置如下图所示：
 
-![Alt text](https://gitee.com/lzczhichao/24-season-visual-code/raw/master/doc/1.png)
+![Alt text](https://github.com/Lzc2003/ROS2_Nav_Implement/blob/master/doc/1.png)
 
 
 ## 运行
@@ -111,7 +111,7 @@ declare_map_yaml_cmd = DeclareLaunchArgument(
 ```
 rqt
 ```
-![Alt text](https://gitee.com/lzczhichao/24-season-visual-code/raw/master/doc/2.png)
+![Alt text](https://github.com/Lzc2003/ROS2_Nav_Implement/blob/master/doc/2.png)
 
 
 - 再运行nav2_map_server功能包的map_saver_cli节点保存，加上-f参数，保存在当前运行命令的文件夹下，map为保存的地图名字
