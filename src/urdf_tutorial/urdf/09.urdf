@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<robot name="sentry">
+  <link name="livox_frame"/>
+  <link name="base_link"/>
+  <joint name="base_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <parent link="livox_frame"/>
+    <child link="base_link"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- <link name="gimbal_imu" /> -->
+  <link name="gimbal_link"/>
+  <joint name="gimbal_joint" type="floating">
+    <parent link="livox_frame"/>
+    <child link="gimbal_link"/>
+  </joint>
+</robot>
